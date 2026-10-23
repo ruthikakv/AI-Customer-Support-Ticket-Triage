@@ -1,0 +1,19 @@
+# Python virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Trained model files
+models/*.joblib
+models/*.pkl
+
+# Environment variables and secrets
+.env
+
+# Editor settings
+.vscode/

@@ -1,0 +1,101 @@
+ticket_id,ticket_text,category,urgency
+T001,"I was charged twice for my subscription",Billing,High
+T002,"How can I change my profile picture",Account,Low
+T003,"The application crashes whenever I open it",Technical,High
+T004,"Where can I find my product warranty information",Product,Low
+T005,"I cannot log in to my account",Account,Medium
+T006,"My invoice is missing from the dashboard",Billing,Medium
+T007,"The payment failed but money was deducted",Billing,High
+T008,"I want to update my email address",Account,Low
+T009,"The application freezes during checkout",Technical,High
+T010,"The product manual is not available",Product,Low
+T011,"I forgot my password and cannot sign in",Account,Medium
+T012,"Please explain the charges on my monthly invoice",Billing,Medium
+T013,"The website shows a server error",Technical,High
+T014,"How do I use the new product features",Product,Low
+T015,"My account has been locked",Account,High
+T016,"I need a copy of my previous invoice",Billing,Low
+T017,"The mobile application is running slowly",Technical,Medium
+T018,"The product setup instructions are confusing",Product,Medium
+T019,"I need to change my subscription payment method",Billing,Low
+T020,"I cannot reset my account password",Account,Medium
+T021,"The checkout page is not loading",Technical,High
+T022,"My product arrived with a damaged component",Product,High
+T023,"When will my refund be processed",Billing,Medium
+T024,"I want to change my account username",Account,Low
+T025,"The application disconnects repeatedly",Technical,Medium
+T026,"How can I register my product warranty",Product,Low
+T027,"My subscription payment was processed twice",Billing,High
+T028,"I cannot access my profile settings",Account,Medium
+T029,"The application displays an unexpected error",Technical,High
+T030,"The product packaging was damaged on delivery",Product,Medium
+T031,"I need help understanding my subscription plan",Billing,Low
+T032,"I received an error while updating my profile",Account,Medium
+T033,"The application will not start after the update",Technical,High
+T034,"I would like information about product maintenance",Product,Low
+T035,"My refund has not arrived yet",Billing,Medium
+T036,"Someone changed my account details without permission",Account,High
+T037,"The application is slow when generating reports",Technical,Medium
+T038,"I received the wrong product in my order",Product,High
+T039,"I need a receipt for my recent payment",Billing,Low
+T040,"I cannot verify my email address",Account,Medium
+T041,"The application stopped working during an important transaction",Technical,High
+T042,"How do I check the compatibility of this product",Product,Low
+T043,"My subscription renewal amount looks incorrect",Billing,Medium
+T044,"I am unable to update my contact information",Account,Low
+T045,"The dashboard is unavailable to all users in our office",Technical,High
+T046,"The product instructions are missing from the package",Product,Medium
+T047,"I was charged for a subscription I cancelled",Billing,High
+T048,"I cannot access my account after changing my password",Account,High
+T049,"The application takes too long to load",Technical,Medium
+T050,"I want to know how to maintain my product",Product,Low
+T051,"My payment receipt has not been generated",Billing,Medium
+T052,"I need to update my account preferences",Account,Low
+T053,"The application closes unexpectedly",Technical,High
+T054,"My product is missing an important accessory",Product,Medium
+T055,"I have a question about my billing cycle",Billing,Low
+T056,"My account verification code is not working",Account,Medium
+T057,"The application is unavailable during checkout",Technical,High
+T058,"The product arrived with a manufacturing defect",Product,High
+T059,"I want to understand the taxes on my invoice",Billing,Low
+T060,"I cannot sign in from my new device",Account,Medium
+T061,"The website keeps timing out",Technical,High
+T062,"How do I update my product registration",Product,Low
+T063,"My credit card was charged after cancellation",Billing,High
+T064,"I need to change the phone number on my account",Account,Low
+T065,"The application is displaying incorrect results",Technical,Medium
+T066,"My product is missing its user guide",Product,Low
+T067,"I need a breakdown of my monthly charges",Billing,Medium
+T068,"My account is temporarily suspended",Account,High
+T069,"The application is not syncing my information",Technical,Medium
+T070,"The product stopped working shortly after delivery",Product,High
+T071,"How can I download my payment receipt",Billing,Low
+T072,"I cannot access the account recovery page",Account,Medium
+T073,"The application is returning errors for every request",Technical,High
+T074,"I need information about the product warranty period",Product,Low
+T075,"My refund amount appears incorrect",Billing,Medium
+T076,"I want to change my account display name",Account,Low
+T077,"The application becomes unresponsive when saving data",Technical,High
+T078,"My product arrived with a cracked casing",Product,High
+T079,"I do not understand a fee on my invoice",Billing,Medium
+T080,"My account login keeps failing",Account,Medium
+T081,"The application is experiencing intermittent outages",Technical,High
+T082,"How do I clean and maintain my product",Product,Low
+T083,"I was billed for the same order twice",Billing,High
+T084,"I need help changing my account settings",Account,Low
+T085,"The application is slow when loading the dashboard",Technical,Medium
+T086,"The product I ordered is missing a component",Product,High
+T087,"When will I receive confirmation of my payment",Billing,Low
+T088,"My account verification link has expired",Account,Medium
+T089,"The application fails whenever I upload a file",Technical,High
+T090,"I need help understanding the product setup process",Product,Low
+T091,"My invoice contains an unexpected additional charge",Billing,Medium
+T092,"I cannot unlock my account",Account,High
+T093,"The application is not saving my changes",Technical,Medium
+T094,"The product arrived without the promised accessories",Product,Medium
+T095,"My subscription renewal payment failed",Billing,Medium
+T096,"I cannot change my account password",Account,Low
+T097,"The application crashes when processing a large file",Technical,High
+T098,"My product has a defect that affects its operation",Product,High
+T099,"I need a receipt for an older transaction",Billing,Low
+T100,"I cannot access my account settings page",Account,Medium
