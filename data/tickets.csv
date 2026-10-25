@@ -1,101 +1,179 @@
 ticket_id,ticket_text,category,urgency
-T001,"I was charged twice for my subscription",Billing,High
-T002,"How can I change my profile picture",Account,Low
-T003,"The application crashes whenever I open it",Technical,High
-T004,"Where can I find my product warranty information",Product,Low
-T005,"I cannot log in to my account",Account,Medium
-T006,"My invoice is missing from the dashboard",Billing,Medium
-T007,"The payment failed but money was deducted",Billing,High
-T008,"I want to update my email address",Account,Low
-T009,"The application freezes during checkout",Technical,High
-T010,"The product manual is not available",Product,Low
-T011,"I forgot my password and cannot sign in",Account,Medium
-T012,"Please explain the charges on my monthly invoice",Billing,Medium
-T013,"The website shows a server error",Technical,High
-T014,"How do I use the new product features",Product,Low
-T015,"My account has been locked",Account,High
-T016,"I need a copy of my previous invoice",Billing,Low
-T017,"The mobile application is running slowly",Technical,Medium
-T018,"The product setup instructions are confusing",Product,Medium
-T019,"I need to change my subscription payment method",Billing,Low
-T020,"I cannot reset my account password",Account,Medium
-T021,"The checkout page is not loading",Technical,High
-T022,"My product arrived with a damaged component",Product,High
-T023,"When will my refund be processed",Billing,Medium
-T024,"I want to change my account username",Account,Low
-T025,"The application disconnects repeatedly",Technical,Medium
-T026,"How can I register my product warranty",Product,Low
-T027,"My subscription payment was processed twice",Billing,High
-T028,"I cannot access my profile settings",Account,Medium
-T029,"The application displays an unexpected error",Technical,High
-T030,"The product packaging was damaged on delivery",Product,Medium
-T031,"I need help understanding my subscription plan",Billing,Low
-T032,"I received an error while updating my profile",Account,Medium
-T033,"The application will not start after the update",Technical,High
-T034,"I would like information about product maintenance",Product,Low
-T035,"My refund has not arrived yet",Billing,Medium
-T036,"Someone changed my account details without permission",Account,High
-T037,"The application is slow when generating reports",Technical,Medium
-T038,"I received the wrong product in my order",Product,High
-T039,"I need a receipt for my recent payment",Billing,Low
-T040,"I cannot verify my email address",Account,Medium
-T041,"The application stopped working during an important transaction",Technical,High
-T042,"How do I check the compatibility of this product",Product,Low
-T043,"My subscription renewal amount looks incorrect",Billing,Medium
-T044,"I am unable to update my contact information",Account,Low
-T045,"The dashboard is unavailable to all users in our office",Technical,High
-T046,"The product instructions are missing from the package",Product,Medium
-T047,"I was charged for a subscription I cancelled",Billing,High
-T048,"I cannot access my account after changing my password",Account,High
-T049,"The application takes too long to load",Technical,Medium
-T050,"I want to know how to maintain my product",Product,Low
-T051,"My payment receipt has not been generated",Billing,Medium
-T052,"I need to update my account preferences",Account,Low
-T053,"The application closes unexpectedly",Technical,High
-T054,"My product is missing an important accessory",Product,Medium
-T055,"I have a question about my billing cycle",Billing,Low
-T056,"My account verification code is not working",Account,Medium
-T057,"The application is unavailable during checkout",Technical,High
-T058,"The product arrived with a manufacturing defect",Product,High
-T059,"I want to understand the taxes on my invoice",Billing,Low
-T060,"I cannot sign in from my new device",Account,Medium
-T061,"The website keeps timing out",Technical,High
-T062,"How do I update my product registration",Product,Low
-T063,"My credit card was charged after cancellation",Billing,High
-T064,"I need to change the phone number on my account",Account,Low
-T065,"The application is displaying incorrect results",Technical,Medium
-T066,"My product is missing its user guide",Product,Low
-T067,"I need a breakdown of my monthly charges",Billing,Medium
-T068,"My account is temporarily suspended",Account,High
-T069,"The application is not syncing my information",Technical,Medium
-T070,"The product stopped working shortly after delivery",Product,High
-T071,"How can I download my payment receipt",Billing,Low
-T072,"I cannot access the account recovery page",Account,Medium
-T073,"The application is returning errors for every request",Technical,High
-T074,"I need information about the product warranty period",Product,Low
-T075,"My refund amount appears incorrect",Billing,Medium
-T076,"I want to change my account display name",Account,Low
-T077,"The application becomes unresponsive when saving data",Technical,High
-T078,"My product arrived with a cracked casing",Product,High
-T079,"I do not understand a fee on my invoice",Billing,Medium
-T080,"My account login keeps failing",Account,Medium
-T081,"The application is experiencing intermittent outages",Technical,High
-T082,"How do I clean and maintain my product",Product,Low
-T083,"I was billed for the same order twice",Billing,High
-T084,"I need help changing my account settings",Account,Low
-T085,"The application is slow when loading the dashboard",Technical,Medium
-T086,"The product I ordered is missing a component",Product,High
-T087,"When will I receive confirmation of my payment",Billing,Low
-T088,"My account verification link has expired",Account,Medium
-T089,"The application fails whenever I upload a file",Technical,High
-T090,"I need help understanding the product setup process",Product,Low
-T091,"My invoice contains an unexpected additional charge",Billing,Medium
-T092,"I cannot unlock my account",Account,High
-T093,"The application is not saving my changes",Technical,Medium
-T094,"The product arrived without the promised accessories",Product,Medium
-T095,"My subscription renewal payment failed",Billing,Medium
-T096,"I cannot change my account password",Account,Low
-T097,"The application crashes when processing a large file",Technical,High
-T098,"My product has a defect that affects its operation",Product,High
-T099,"I need a receipt for an older transaction",Billing,Low
-T100,"I cannot access my account settings page",Account,Medium
+T001,I was charged twice for my subscription,Billing,High
+T002,How can I change my profile picture,Account,Low
+T003,The application crashes whenever I open it,Technical,High
+T004,Where can I find my product warranty information,Product,Low
+T005,I cannot log in to my account,Account,Medium
+T006,My invoice is missing from the dashboard,Billing,Medium
+T007,The payment failed but money was deducted,Billing,High
+T008,I want to update my email address,Account,Low
+T009,The application freezes during checkout,Technical,High
+T010,The product manual is not available,Product,Low
+T011,I forgot my password and cannot sign in,Account,Medium
+T012,Please explain the charges on my monthly invoice,Billing,Medium
+T013,The website shows a server error,Technical,High
+T014,How do I use the new product features,Product,Low
+T015,My account has been locked,Account,High
+T016,I need a copy of my previous invoice,Billing,Low
+T017,The mobile application is running slowly,Technical,Medium
+T018,The product setup instructions are confusing,Product,Medium
+T019,I need to change my subscription payment method,Billing,Low
+T020,I cannot reset my account password,Account,Medium
+T021,The checkout page is not loading,Technical,High
+T022,My product arrived with a damaged component,Product,High
+T023,When will my refund be processed,Billing,Medium
+T024,I want to change my account username,Account,Low
+T025,The application disconnects repeatedly,Technical,Medium
+T026,How can I register my product warranty,Product,Low
+T027,My subscription payment was processed twice,Billing,High
+T028,I cannot access my profile settings,Account,Medium
+T029,The application displays an unexpected error,Technical,High
+T030,The product packaging was damaged on delivery,Product,Medium
+T031,I need help understanding my subscription plan,Billing,Low
+T032,I received an error while updating my profile,Account,Medium
+T033,The application will not start after the update,Technical,High
+T034,I would like information about product maintenance,Product,Low
+T035,My refund has not arrived yet,Billing,Medium
+T036,Someone changed my account details without permission,Account,High
+T037,The application is slow when generating reports,Technical,Medium
+T038,I received the wrong product in my order,Product,High
+T039,I need a receipt for my recent payment,Billing,Low
+T040,I cannot verify my email address,Account,Medium
+T041,The application stopped working during an important transaction,Technical,High
+T042,How do I check the compatibility of this product,Product,Low
+T043,My subscription renewal amount looks incorrect,Billing,Medium
+T044,I am unable to update my contact information,Account,Low
+T045,The dashboard is unavailable to all users in our office,Technical,High
+T046,The product instructions are missing from the package,Product,Medium
+T047,I was charged for a subscription I cancelled,Billing,High
+T048,I cannot access my account after changing my password,Account,High
+T049,The application takes too long to load,Technical,Medium
+T050,I want to know how to maintain my product,Product,Low
+T051,My payment receipt has not been generated,Billing,Medium
+T052,I need to update my account preferences,Account,Low
+T053,The application closes unexpectedly,Technical,High
+T054,My product is missing an important accessory,Product,Medium
+T055,I have a question about my billing cycle,Billing,Low
+T056,My account verification code is not working,Account,Medium
+T057,The application is unavailable during checkout,Technical,High
+T058,The product arrived with a manufacturing defect,Product,High
+T059,I want to understand the taxes on my invoice,Billing,Low
+T060,I cannot sign in from my new device,Account,Medium
+T061,The website keeps timing out,Technical,High
+T062,How do I update my product registration,Product,Low
+T063,My credit card was charged after cancellation,Billing,High
+T064,I need to change the phone number on my account,Account,Low
+T065,The application is displaying incorrect results,Technical,Medium
+T066,My product is missing its user guide,Product,Low
+T067,I need a breakdown of my monthly charges,Billing,Medium
+T068,My account is temporarily suspended,Account,High
+T069,The application is not syncing my information,Technical,Medium
+T070,The product stopped working shortly after delivery,Product,High
+T071,How can I download my payment receipt,Billing,Low
+T072,I cannot access the account recovery page,Account,Medium
+T073,The application is returning errors for every request,Technical,High
+T074,I need information about the product warranty period,Product,Low
+T075,My refund amount appears incorrect,Billing,Medium
+T076,I want to change my account display name,Account,Low
+T077,The application becomes unresponsive when saving data,Technical,High
+T078,My product arrived with a cracked casing,Product,High
+T079,I do not understand a fee on my invoice,Billing,Medium
+T080,My account login keeps failing,Account,Medium
+T081,The application is experiencing intermittent outages,Technical,High
+T082,How do I clean and maintain my product,Product,Low
+T083,I was billed for the same order twice,Billing,High
+T084,I need help changing my account settings,Account,Low
+T085,The application is slow when loading the dashboard,Technical,Medium
+T086,The product I ordered is missing a component,Product,High
+T087,When will I receive confirmation of my payment,Billing,Low
+T088,My account verification link has expired,Account,Medium
+T089,The application fails whenever I upload a file,Technical,High
+T090,I need help understanding the product setup process,Product,Low
+T091,My invoice contains an unexpected additional charge,Billing,Medium
+T092,I cannot unlock my account,Account,High
+T093,The application is not saving my changes,Technical,Medium
+T094,The product arrived without the promised accessories,Product,Medium
+T095,My subscription renewal payment failed,Billing,Medium
+T096,I cannot change my account password,Account,Low
+T097,The application crashes when processing a large file,Technical,High
+T098,My product has a defect that affects its operation,Product,High
+T099,I need a receipt for an older transaction,Billing,Low
+T100,I cannot access my account settings page,Account,Medium
+T101,I was billed for a subscription I cancelled,Billing,High
+T102,Please send me a copy of my latest invoice,Billing,Low
+T104,The amount charged is different from the displayed price,Billing,High
+T105,I do not understand the extra fee on my bill,Billing,Medium
+T106,My card was charged but the order failed,Billing,High
+T107,How can I download previous payment receipts?,Billing,Low
+T108,I need help updating my billing address,Billing,Low
+T109,The monthly subscription price increased unexpectedly,Billing,Medium
+T110,I received two invoices for the same purchase,Billing,High
+T111,My refund request is still being processed,Billing,Medium
+T112,I cannot add my payment method,Billing,Medium
+T113,The payment page keeps rejecting my card,Billing,Medium
+T114,I was charged after my free trial ended,Billing,High
+T115,Can you explain the tax amount on my invoice?,Billing,Low
+T116,My payment is showing as pending,Billing,Medium
+T117,I need to correct the name on my invoice,Billing,Low
+T118,The discount was not applied to my order,Billing,Medium
+T119,I paid successfully but still see an unpaid balance,Billing,High
+T120,Please help me cancel an accidental payment,Billing,High
+T121,I cannot reset my password,Account,Medium
+T122,My account is locked after several login attempts,Account,High
+T123,How do I change the phone number on my profile?,Account,Low
+T124,I am not receiving the email verification code,Account,Medium
+T125,I want to deactivate my account,Account,Low
+T126,My profile changes are not being saved,Account,Medium
+T127,I think someone accessed my account without permission,Account,High
+T128,I cannot sign in even though my password is correct,Account,High
+T129,How can I update my personal details?,Account,Low
+T130,The verification link has expired,Account,Medium
+T131,I no longer have access to my registered email,Account,Medium
+T132,My account settings page is not loading,Account,Medium
+T133,Please help me recover my account,Account,Medium
+T134,I accidentally created two accounts,Account,Low
+T135,My profile picture will not upload,Account,Low
+T136,The login page keeps sending me back to sign in,Account,High
+T137,I need to change my username,Account,Low
+T138,Two-factor authentication is not working,Account,High
+T139,I am unable to verify my phone number,Account,Medium
+T140,How can I update my account password?,Account,Low
+T141,The website becomes very slow when I search,Technical,Medium
+T142,The mobile application closes unexpectedly,Technical,High
+T143,I get an error whenever I submit the form,Technical,High
+T144,The dashboard is blank after I log in,Technical,High
+T145,The search function is returning no results,Technical,Medium
+T146,The application is not loading on my phone,Technical,High
+T147,I cannot upload a file to the website,Technical,Medium
+T148,The page displays a server error every time,Technical,High
+T149,Notifications are not appearing in the application,Technical,Medium
+T150,The website layout is broken on my tablet,Technical,Low
+T151,The application freezes when I open settings,Technical,High
+T152,I am unable to download a report,Technical,Medium
+T153,The page keeps refreshing by itself,Technical,Medium
+T154,The application is not syncing my latest changes,Technical,Medium
+T155,I get a timeout error when saving information,Technical,High
+T156,The website is unavailable right now,Technical,High
+T157,The app crashes when I try to upload a photo,Technical,High
+T158,The menu buttons do not respond when clicked,Technical,Medium
+T159,I cannot connect to the service using my browser,Technical,High
+T160,The application takes too long to open,Technical,Medium
+T161,Where can I find the product user guide?,Product,Low
+T162,Does this product support wireless connectivity?,Product,Low
+T163,I received the wrong product variant,Product,Medium
+T164,The product specifications are missing from the page,Product,Low
+T165,How do I register my product warranty?,Product,Low
+T166,The product arrived with a missing accessory,Product,Medium
+T167,I need instructions for installing the product,Product,Low
+T168,Is this product compatible with my device?,Product,Low
+T169,The product description does not match the item received,Product,High
+T170,I would like to know the warranty period,Product,Low
+T171,The replacement item has not arrived,Product,Medium
+T172,Can I exchange this product for another model?,Product,Medium
+T174,I received a damaged item in my order,Product,High
+T175,Where can I find troubleshooting instructions for this product?,Product,Low
+T176,The product is missing its instruction manual,Product,Low
+T177,I need information about available product accessories,Product,Low
+T178,The replacement product is also not working,Product,High
+T179,Can you explain the differences between these two models?,Product,Low
+T180,I want to check whether this product is still under warranty,Product,Low

@@ -1,0 +1,21 @@
+CUSTOMER SUPPORT URGENCY MODEL EVALUATION
+
+Total tickets: 178
+Training tickets: 142
+Testing tickets: 36
+
+Accuracy: 0.6111
+Macro Precision: 0.6684
+Macro Recall: 0.6164
+Macro F1-score: 0.6340
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+        High       0.54      0.58      0.56        12
+         Low       1.00      0.73      0.84        11
+      Medium       0.47      0.54      0.50        13
+
+    accuracy                           0.61        36
+   macro avg       0.67      0.62      0.63        36
+weighted avg       0.65      0.61      0.62        36
