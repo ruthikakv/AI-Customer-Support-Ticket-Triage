@@ -1,6 +1,10 @@
 import streamlit as st
 import joblib
+import pandas as pd
 from pathlib import Path
+from sklearn.pipeline import Pipeline
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
 
 # Find the project folder
 
@@ -8,11 +12,44 @@ PROJECT_DIR = Path(__file__).resolve().parent.parent
 
 # Load trained AI models
 
+# Load trained AI models or train them if missing
+
 CATEGORY_MODEL_PATH = PROJECT_DIR / "models" / "category_model.joblib"
 URGENCY_MODEL_PATH = PROJECT_DIR / "models" / "urgency_model.joblib"
 
-category_model = joblib.load(CATEGORY_MODEL_PATH)
-urgency_model = joblib.load(URGENCY_MODEL_PATH)
+DATA_PATH = PROJECT_DIR / "data" / "tickets.csv"
+
+if CATEGORY_MODEL_PATH.exists() and URGENCY_MODEL_PATH.exists():
+    category_model = joblib.load(CATEGORY_MODEL_PATH)
+    urgency_model = joblib.load(URGENCY_MODEL_PATH)
+
+else:
+    st.info("Preparing AI models for the first time...")
+
+    # Load the training dataset
+    df = pd.read_csv(DATA_PATH)
+
+    X = df["ticket_text"]
+    y_category = df["category"]
+    y_urgency = df["urgency"]
+
+    # Create the category prediction model
+    category_model = Pipeline([
+        ("tfidf", TfidfVectorizer(lowercase=True, ngram_range=(1, 2))),
+        ("classifier", LogisticRegression(max_iter=1000))
+    ])
+
+    # Create the urgency prediction model
+    urgency_model = Pipeline([
+        ("tfidf", TfidfVectorizer(lowercase=True, ngram_range=(1, 2))),
+        ("classifier", LogisticRegression(max_iter=1000))
+    ])
+
+    # Train both models using the available dataset
+    category_model.fit(X, y_category)
+    urgency_model.fit(X, y_urgency)
+
+    st.success("AI models are ready!")
 
 # Support team mapping
 
