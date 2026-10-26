@@ -24,7 +24,7 @@ if CATEGORY_MODEL_PATH.exists() and URGENCY_MODEL_PATH.exists():
     urgency_model = joblib.load(URGENCY_MODEL_PATH)
 
 else:
-    st.info("Preparing AI models for the first time...")
+
 
     # Load the training dataset
     df = pd.read_csv(DATA_PATH)
@@ -49,7 +49,7 @@ else:
     category_model.fit(X, y_category)
     urgency_model.fit(X, y_urgency)
 
-    st.success("AI models are ready!")
+    
 
 # Support team mapping
 
