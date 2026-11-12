@@ -93,6 +93,15 @@ st.markdown("""
     background-color: #F5F7FB;
 }
 
+section[data-testid="stSidebar"] {
+    background-color: #E8EEF5;
+}
+
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #1E3A5F;
+}
+
 .block-container {
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -104,11 +113,12 @@ header[data-testid="stHeader"] {
 }
 
 .hero {
-    background: linear-gradient(120deg, #172554, #2563EB);
+    background-color: #1E3A5F;
     padding: 32px;
-    border-radius: 18px;
-    color: white;
+    border-radius: 12px;
+    color: #FFFFFF;
     margin-bottom: 28px;
+    border: 1px solid #D1DCE8;
 }
 
 .hero h1 {
@@ -124,11 +134,12 @@ header[data-testid="stHeader"] {
 }
 
 .section-title {
-    color: #172554;
-    font-size: 22px;
-    font-weight: 700;
-    margin-top: 15px;
+    color: #1E3A5F;
+    font-size: 23px;
+    font-weight: 650;
+    margin-top: 20px;
     margin-bottom: 15px;
+    letter-spacing: 0.2px;
 }
 
 div[data-testid="stVerticalBlockBorderWrapper"] {
@@ -139,29 +150,40 @@ div[data-testid="stVerticalBlockBorderWrapper"] {
 }
 
 div.stButton > button {
-    background: #2563EB;
+    background-color: #1E3A5F;
     color: white;
-    border-radius: 9px;
-    border: none;
+    border-radius: 8px;
+    border: 1px solid #1E3A5F;
     padding: 12px 20px;
     font-weight: 600;
     width: 100%;
 }
 
 div.stButton > button:hover {
+    background-color: #2D527A;
+    color: white;
+    border: 1px solid #2D527A;
+}
+div.stButton > button:hover {
     background: #1D4ED8;
     color: white;
 }
 
 div[data-testid="stMetric"] {
-    background: white;
-    border: 1px solid #E5EAF2;
-    padding: 18px;
-    border-radius: 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #D1DCE8;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 textarea {
-    border-radius: 10px !important;
+    border-radius: 8px !important;
+    border: 1px solid #CBD5E1 !important;
+}
+
+textarea:focus {
+    border-color: #1E3A5F !important;
+    box-shadow: 0 0 0 1px #1E3A5F !important;
 }
 
 .footer {
@@ -460,99 +482,6 @@ elif selected_page == "Analyze Ticket":
 # 10. TICKET HISTORY PAGE
 # --------------------------------------------------
 
-elif selected_page == "Ticket History":
-
-    st.markdown(
-        '<div class="section-title">Ticket History</div>',
-        unsafe_allow_html=True
-    )
-
-    st.write("Search and filter previously analyzed tickets.")
-
-    history_df = get_all_tickets()
-
-    if not history_df.empty:
-
-        history_df = history_df.rename(columns={
-            "ticket": "Ticket",
-            "category": "Category",
-            "urgency": "Urgency",
-            "support_team": "Support Team",
-            "category_confidence": "Category Confidence",
-            "urgency_confidence": "Urgency Confidence",
-            "created_at": "Date Analyzed"
-        })
-
-        st.metric("Total Analyzed Tickets", len(history_df))
-
-        search_text = st.text_input(
-            "🔍 Search Tickets",
-            placeholder="Search using ticket description..."
-        )
-
-        col1, col2 = st.columns(2)
-
-        with col1:
-            category_filter = st.selectbox(
-                "Filter by Category",
-                ["All", "Billing", "Account", "Technical", "Product"]
-            )
-
-        with col2:
-            urgency_filter = st.selectbox(
-                "Filter by Urgency",
-                ["All", "High", "Medium", "Low"]
-            )
-
-        filtered_df = history_df.copy()
-
-        if search_text:
-            filtered_df = filtered_df[
-                filtered_df["Ticket"].str.contains(
-                    search_text, case=False, na=False
-                )
-            ]
-
-        if category_filter != "All":
-            filtered_df = filtered_df[
-                filtered_df["Category"] == category_filter
-            ]
-
-        if urgency_filter != "All":
-            filtered_df = filtered_df[
-                filtered_df["Urgency"] == urgency_filter
-            ]
-
-        st.markdown("### Filtered Tickets")
-        st.caption(
-            f"Showing {len(filtered_df)} of {len(history_df)} tickets"
-        )
-
-        if not filtered_df.empty:
-
-            display_columns = [
-                "Ticket",
-                "Category",
-                "Urgency",
-                "Support Team",
-                "Category Confidence",
-                "Urgency Confidence",
-                "Date Analyzed"
-            ]
-
-            st.dataframe(
-                filtered_df[display_columns],
-                use_container_width=True,
-                hide_index=True
-            )
-
-        else:
-            st.warning("No tickets match your search or filters.")
-
-    else:
-        st.info(
-            "No ticket history available yet. Analyze a ticket to see it here."
-        )
 elif selected_page == "Ticket History":
 
     st.markdown(
