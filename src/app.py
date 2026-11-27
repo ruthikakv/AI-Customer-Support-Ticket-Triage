@@ -91,6 +91,29 @@ st.markdown("""
 
 .stApp {
     background-color: #F5F7FB;
+    color: #334155;
+}
+
+/* Main page text */
+.stApp p,
+.stApp label,
+.stApp .stMarkdown,
+.stApp [data-testid="stMetricLabel"],
+.stApp [data-testid="stMetricValue"],
+.stApp [data-testid="stCaptionContainer"] {
+    color: #334155;
+}
+
+/* Sidebar text */
+section[data-testid="stSidebar"] {
+    background-color: #E8EEF5;
+    color: #1E3A5F;
+}
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] span {
+    color: #334155;
 }
 
 section[data-testid="stSidebar"] {
@@ -177,8 +200,27 @@ div[data-testid="stMetric"] {
 }
 
 textarea {
-    border-radius: 8px !important;
+    background-color: #FFFFFF !important;
+    color: #334155 !important;
     border: 1px solid #CBD5E1 !important;
+    border-radius: 8px !important;
+}
+
+textarea::placeholder {
+    color: #94A3B8 !important;
+    opacity: 1;
+}
+div[data-testid="stFormSubmitButton"] button {
+    background-color: #1E3A5F !important;
+    color: #FFFFFF !important;
+    border: 1px solid #1E3A5F !important;
+    border-radius: 8px !important;
+    font-weight: 600;
+}
+
+div[data-testid="stFormSubmitButton"] button:hover {
+    background-color: #2D527A !important;
+    color: #FFFFFF !important;
 }
 
 textarea:focus {
@@ -222,14 +264,6 @@ with st.sidebar:
     ["Dashboard", "Analyze Ticket", "Ticket History"],
     label_visibility="collapsed"
 )
-
-    st.divider()
-
-    st.markdown("### AI System Status")
-
-    st.success("Models loaded")
-
-    st.caption("Powered by Machine Learning")
 
 
 # --------------------------------------------------
